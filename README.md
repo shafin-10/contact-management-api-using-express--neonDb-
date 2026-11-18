@@ -27,9 +27,8 @@ A RESTful Contact Management API built with **Node.js, Express.js, TypeScript, a
 - Error handling for database operations
 
 ## 📁 Project Structure
-
 ```text
-contact-management-api/
+contact-management-api-using-express--neonDb/
 │
 ├── src/
 │   ├── config/
@@ -47,19 +46,16 @@ contact-management-api/
 ## ⚙️ Installation and Setup
 
 ### 1. Clone the repository
-
 ```bash
-git clone https://github.com/shafin-10/contact-management-api.git
+git clone https://github.com/shafin-10/contact-management-api-using-express--neonDb.git
 ```
 
 ### 2. Navigate to the project directory
-
 ```bash
-cd contact-management-api
+cd contact-management-api-using-express--neonDb
 ```
 
 ### 3. Install dependencies
-
 ```bash
 npm install
 ```
@@ -67,7 +63,6 @@ npm install
 ### 4. Configure environment variables
 
 Create a `.env` file in the project root:
-
 ```env
 PORT=5000
 DATABASE_URL=your_neon_postgresql_connection_string
@@ -76,13 +71,11 @@ DATABASE_URL=your_neon_postgresql_connection_string
 Replace the database URL with your Neon PostgreSQL connection string. Make sure the environment variable names match those used in your configuration file.
 
 ### 5. Run the development server
-
 ```bash
 npm run dev
 ```
 
 The server will start at:
-
 ```text
 http://localhost:5000
 ```
@@ -91,20 +84,19 @@ http://localhost:5000
 
 Base URL: `http://localhost:5000/api/v1`
 
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/contacts` | Create a new contact |
-| GET | `/contacts` | Retrieve all contacts |
-| GET | `/contacts/:id` | Retrieve a contact by ID |
-| PUT | `/contacts/:id` | Update a contact |
-| DELETE | `/contacts/:id` | Delete a contact |
+| Method | Endpoint        | Description              |
+| ------ | --------------- | ------------------------ |
+| POST   | `/contacts`     | Create a new contact     |
+| GET    | `/contacts`     | Retrieve all contacts    |
+| GET    | `/contacts/:id` | Retrieve a contact by ID |
+| PUT    | `/contacts/:id` | Update a contact         |
+| DELETE | `/contacts/:id` | Delete a contact         |
 
 ### 1. Create a Contact
 
 **POST** `/contacts`
 
 Request body:
-
 ```json
 {
   "name": "John Doe",
@@ -131,7 +123,6 @@ Returns the contact associated with the specified ID.
 **PUT** `/contacts/1`
 
 Request body:
-
 ```json
 {
   "name": "John Smith",
@@ -151,15 +142,15 @@ Deletes the contact associated with the specified ID.
 
 The application automatically creates the `contacts` table if it does not already exist.
 
-| Column | Data Type | Description |
-|---|---|---|
-| id | SERIAL | Primary key |
-| name | VARCHAR(255) | Contact name |
-| email | VARCHAR(255) | Contact email |
-| subject | VARCHAR(255) | Message subject |
-| message | TEXT | Contact message |
-| created_at | TIMESTAMPTZ | Record creation timestamp |
-| updated_at | TIMESTAMPTZ | Record update timestamp |
+| Column     | Data Type    | Description               |
+| ---------- | ------------ | ------------------------- |
+| id         | SERIAL       | Primary key               |
+| name       | VARCHAR(255) | Contact name              |
+| email      | VARCHAR(255) | Contact email             |
+| subject    | VARCHAR(255) | Message subject           |
+| message    | TEXT         | Contact message           |
+| created_at | TIMESTAMPTZ  | Record creation timestamp |
+| updated_at | TIMESTAMPTZ  | Record update timestamp   |
 
 ## 🎯 Learning Objectives
 
@@ -181,7 +172,7 @@ Through this project, I practiced:
 
 - GitHub: [shafin-10](https://github.com/shafin-10)
 - LinkedIn: [shafin-shahriar](https://www.linkedin.com/in/shafin-shahriar/)
-- Email: shafinshahriar2001@gmail.com
+- Email: [shafinshahriar2001@gmail.com](mailto:shafinshahriar2001@gmail.com)
 
 ---
 
